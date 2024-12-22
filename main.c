@@ -2,9 +2,13 @@
 #include <locale.h>
 #include <string.h>
 
+// Função que transforma metros em centímetros
+
 float metros_centimetros(float x) {
     return x * 10000;
 }
+
+// Função que transforma centímetros em metros  
 
 float centimetros_metros(float x) {
     return x / 10000;
@@ -16,6 +20,9 @@ int main(void) {
     float resultado, valor;
     int escolha;
     char resposta;
+
+
+    //Menu
 
     do {
         printf("Olá, seja muito bem-vindo!!\n\n");
@@ -55,6 +62,9 @@ int main(void) {
                 printf("Opção inválida! Tente novamente.\n");
         }
 
+
+        // Loop de continuação
+        
         printf("\nDeseja fazer outra operação? (S/N): ");
         scanf(" %c", &resposta);
 
